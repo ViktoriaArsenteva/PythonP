@@ -7,14 +7,6 @@ from random import randint
 
 
 k = int(input('Введите степень многочлена: '))
-k1 = randint(0,101)
-k2 = randint(0,101)
-k3 = randint(0,101)
-if (k1 > 0) and (k2 > 0) and (k3 > 0):
-    print(k1,'* x ^',k,'+',k2,'* x ^',k - 1, '+', k3)
-elif (k1 == 0) and (k2 > 0) and (k3 > 0):
-    print(k2,'* x ^',k - 1, '+', k3)
-elif (k2 == 0) and (k2 > 0) and (k3 > 0):
-    print(k1,'* x ^',k,'+', k3)
-elif (k3 == 0) and (k1 > 0) and (k2 > 0):
-    print(k1,'* x ^',k,'+',k2,'* x ^',k - 1)
+for i in range(k + 1, 2, -1):
+    print(randint(0,101),'* x ^', i - 1,end=' + ')
+print (randint(0,101),'* x +', randint(0,100))
