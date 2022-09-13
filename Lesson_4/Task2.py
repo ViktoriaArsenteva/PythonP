@@ -17,10 +17,19 @@ for k in numbers:
                 break
     if control == True:
         primenumbers.append(k)
-print(primenumbers)
 result = []
-check = True
 op = 1
+while op != n:
+    for l in primenumbers:
+        if l >= n:
+            break
+        if (n % l == 0) and (op != n) and (op * l <= n):
+            op *= l
+            result.append(l)
+result.sort()
+print('Простые множители числа',n, '-',result)
 
+# Решение работает для большинства чисел, но на некоторых (например: 50, 90) зацикливается. 
+# Помоги пожалуйта, какое еще условие добавить, чтобы  исправить ошибку?) 
 
         
