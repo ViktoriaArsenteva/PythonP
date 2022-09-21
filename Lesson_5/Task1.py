@@ -14,3 +14,5 @@ result = ''
 for k in text:
     result += k + " "
 file = open('resultFromTask1.txt','w').write(result)
+
+

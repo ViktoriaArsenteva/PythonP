@@ -16,3 +16,4 @@ rehab = ''
 for j in range(len(result)):
     rehab += result[j][0] * result[j][1]
 print(rehab)
+
