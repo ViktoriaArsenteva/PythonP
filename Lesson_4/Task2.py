@@ -21,7 +21,7 @@ result = []
 op = 1
 while op != n:
     for l in primenumbers:
-        if (l >= n):
+        if l >= n:
             break
         if (n % l == 0) and (op != n) and (op * l <= n) and ((op * l <= n // 2) or (op * l == n)) :
             op *= l
